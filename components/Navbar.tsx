@@ -2,7 +2,7 @@
 import { navigationMenu } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { IoIosArrowUp } from "react-icons/io";
 import { AiOutlineShoppingCart, AiOutlineSearch } from "react-icons/ai";
@@ -12,7 +12,32 @@ interface NavbarProps {
   scrollTop: boolean;
 }
 
-const Navbar = ({ scrollActive, scrollTop }: NavbarProps) => {
+const Navbar = () => {
+
+  const [scrollActive, setScrollActive] = useState(false);
+
+  const [scrollTop, setScrollTop] = useState(true);
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScrollActive(true);
+    } else {
+      setScrollActive(false);
+    }
+    if (window.scrollY < 100) {
+      setScrollTop(true);
+    } else {
+      setScrollTop(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
   return (
     <>
       <Link

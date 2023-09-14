@@ -40,11 +40,11 @@ const ProductCategory = ({ products, category }: CategoryProps) => {
             group-hover:duration-[2s] group-hover:-translate-x-[280rem] bg-[#d9d6d6d5]"
             />
             <div className=" hidden group-hover:flex gap-6">
-              <button className="p-3 text-2xl rounded-md text-white bg-red-300">
+              <button className="p-3 text-2xl rounded-md text-white bg-btn-color">
                 {product.liked ? <AiFillHeart /> : <AiOutlineHeart />}
               </button>
               <Link
-                className="p-3 text-2xl text-white rounded-md bg-red-300"
+                className="p-3 text-2xl text-white rounded-md bg-btn-color"
                 href={product.src}
               >
                 <HiOutlineLink />
