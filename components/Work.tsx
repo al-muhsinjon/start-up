@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { ProductCategory } from ".";
 
 const Work = () => {
-  // console.log(categoryProduct);
 
   const { filtereds, products } = categoryProduct;
   const [category, setCategory] = useState("all");

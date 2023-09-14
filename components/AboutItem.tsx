@@ -1,6 +1,5 @@
 import { AboutItemProps } from "@/types";
 import React from "react";
-// import { IconBase } from "react-icons";
 
 interface AboutProps {
   data: AboutItemProps;

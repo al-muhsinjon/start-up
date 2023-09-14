@@ -11,7 +11,6 @@ import {
   Work,
 } from "@/components";
 import { aboutData, information, storyData } from "@/constants";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -128,8 +127,6 @@ export default function Home() {
       </div>
 
       <Testimonials />
-
-      {/* <TestiTest /> */}
 
       <Sponsor />
     </>

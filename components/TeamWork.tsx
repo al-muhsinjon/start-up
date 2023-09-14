@@ -86,44 +86,4 @@ const TeamWork = () => {
 
 export default TeamWork;
 
-{
-  /* <div className="w-full relative h-full">
-        
-        <div className="w-full h-full flex justify-center items-center">
-          <Swiper
-            slidesPerView={3}
-            spaceBetween={25}
-            navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            className="w-[60%] h-[55%] p-2 overflow-hidden"
-            modules={[Navigation]}
-          >
-            {teamworkData.map((team) => (
-              <SwiperSlide className="group" key={team.id}>
-                <div className="bg-blue-200">
-                  <Image
-                    className="object-contain block"
-                    src={team.src}
-                    alt=""
-                    fill
-                  />
-                  <div className="relative group-hover:top-72 text-end px-6 top-[96rem] ease-out duration-700 py-8 text-white transition-all bg-btn-color">
-                    <h2 className="text-xl font-medium uppercase">
-                      {team.name}
-                    </h2>
-                    <p className="uppercase italic text-base">{team.role}</p>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <div className="swiper-button-prev ml-[10%] after:font-black after:text-gray-600"></div>
-          <div className="swiper-button-next mr-[10%] shadow-2xl after:text-gray-600 font-black after:content-[''] "></div>
-        </div>
-      </div> */
-}
+
